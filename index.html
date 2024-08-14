@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forkify | When gastronomy embraces simplicity</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logotemp.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a
+              id="accountURL"
+              class="nav__link nav__link--btn"
+              href="recipe.html"
+              >Recipies</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+          When
+          <!-- Green highlight effect -->
+          <span class="highlight">gastronomy</span>
+          meets<br />
+          <span class="highlight">simplicity</span>
+        </h1>
+        <h4>
+          Embrace simplicity in recipes for a fulfilling culinary journey.
+        </h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/foodimg.jpg"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything for your kitchen, and beyond.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/recipeCategory.jpg"
+          data-src="img/recipeCategory.jpg"
+          alt="Computer"
+          class="features__img lazy-img newImage"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <img src="img/hatIcon.png" class="newIconclass" alt="" />
+          </div>
+          <h5 class="features__header">Recipe Categories</h5>
+          <p>
+            Organizing recipes into categories such as appetizers, main courses,
+            desserts, vegetarian, gluten-free, etc., to help users browse
+            recipes more efficiently.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <img src="img/toolIcon.png" class="newIconclass" alt="" />
+          </div>
+          <h5 class="features__header">Cooking Tips and Techniques</h5>
+          <p>
+            Offering additional content such as cooking tips, techniques, and
+            kitchen hacks to help users improve their culinary skills.
+          </p>
+        </div>
+        <img
+          src="img/tipsImg.jpeg"
+          data-src="img/tipsImg.jpeg"
+          alt="Plant"
+          class="features__img lazy-img newImage"
+        />
+
+        <img
+          src="img/shoppingImg.jpeg"
+          data-src="img/shoppingImg.jpeg"
+          alt="Credit card"
+          class="features__img lazy-img newImage"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <img src="img/listIcon.png" class="newIconclass" alt="" />
+          </div>
+          <h5 class="features__header">Shopping List Generator</h5>
+          <p>
+            Enable users to create a shopping list directly from selected
+            recipes, making grocery shopping more efficient and ensuring they
+            have all the ingredients they need.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Recipe Search
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Bookmarking
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Add Recipe
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="src/img/icons.svg#icon-search"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Instantly search any recipe, no fees attached!
+          </h5>
+          <p>
+            Navigate our culinary universe with ease using our comprehensive
+            search functionality. Whether you're seeking recipes by keywords,
+            ingredients, cuisine types, dietary preferences, or even specific
+            cooking techniques, our search bar provides a seamless experience,
+            empowering you to discover the perfect dish for every craving and
+            dietary need, all at no cost.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use href="src/img/icons.svg#icon-bookmark"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Create Your Culinary Collection: Bookmark Your Favorite Recipes
+          </h5>
+          <p>
+            Giving users the ability to bookmark recipes they love, creating a
+            personalized collection or recipe box. This feature allows users to
+            easily access and revisit their favorite recipes without having to
+            search for them again. Users can organize their bookmarks into
+            categories or tags for better organization and retrieval.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use href="src/img/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Share Your Culinary Creations: Add Your Own Recipes
+          </h5>
+          <p>
+            Curate Your Culinary Journey: Preserve Your Beloved Recipes and
+            Contribute Your Culinary Creations with the 'Add Recipe' Feature,
+            Nurturing an Inclusive Community of Food Lovers, Where Culinary
+            Inspiration Flows Freely, Allowing for Effortless Access to Your
+            Culinary Favorites Whenever the Craving Strikes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Millions of Forkifiers are already making their lifes simpler.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Culinary satisfaction guaranteed!
+            </h5>
+            <blockquote class="testimonial__text">
+              Wow! This recipe website has truly revolutionized the way I cook
+              at home. With its extensive collection of delicious recipes,
+              easy-to-follow instructions, and helpful cooking tips, I've become
+              more confident and adventurous in the kitchen. Thank you for
+              making cooking a joy again!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              The ultimate recipe for minimalist living
+            </h5>
+            <blockquote class="testimonial__text">
+              I've been using this recipe website for years, and it's become my
+              go-to resource for all things cooking. Whether I'm looking for a
+              quick weeknight dinner, a special occasion dessert, or a new
+              culinary challenge, I can always find inspiration here. The
+              recipes are reliable, diverse, and always delicious!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Embrace a new era of culinary freedom!
+            </h5>
+            <blockquote class="testimonial__text">
+              As a busy professional, I don't always have time to plan meals or
+              grocery shop. This recipe website has been a lifesaver! I can
+              quickly search for recipes based on ingredients I have on hand,
+              add them to my meal plan, and generate a shopping list in minutes.
+              It's made meal planning effortless and enjoyable!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The perfect day to start exploring our recipe website was yesterday.
+          The next best day is now!
+        </h3>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="src/img/favicon.png" alt="Logo" class="footer__logo" />
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
